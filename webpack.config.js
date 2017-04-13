@@ -41,6 +41,10 @@ module.exports = {
             filename: 'index.html',
             template: 'index.html',
             hash: true
+        }),
+        new MarkDonwToStaticHTMLPlugin({
+          template: 'index.html',
+          path: '/posts'
         })
     ]
 }
